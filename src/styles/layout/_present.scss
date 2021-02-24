@@ -1,0 +1,28 @@
+.section-present {
+  background: url("images/bg-present.png") no-repeat;
+  background-size: cover;
+
+  .section-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+}
+
+.present-wrapper {
+  padding: 260px 0;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 139.4%;
+    color: white;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 60px;
+    line-height: 139.4%;
+    color: white;
+  }
+
+}

@@ -1,0 +1,31 @@
+.section-stages {
+  background-color: #000;
+
+  .section-inner {
+    padding: 65px 0 140px 0;
+  }
+}
+
+.stage-wrapper {
+
+  &__subtitle {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 9.7px;
+    text-transform: uppercase;
+    color: #FF9900;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-bottom: 95px;
+
+  }
+}

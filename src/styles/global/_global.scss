@@ -1,0 +1,86 @@
+*::selection {
+  background: $pink;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+// My styles
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 11px;
+
+  &-primary {
+    background: #FF9900;
+    box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+    color: white;
+    border-color: #FF9900;
+    border-width: 1px;
+    transition: all .33s;
+    padding: 11px;
+
+
+    &:hover {
+      background: none;
+      box-shadow: 2px 2px 20px 6px rgba(255, 153, 0, 0.32);
+      color: #ffffff;
+    }
+  }
+
+  &-outlined {
+    background: none;
+    border: 2px solid #FF9900;
+    color: #FF9900;
+    transition: all .33s;
+
+    &:hover {
+      background: #FF9900;
+      color: white;
+    }
+  }
+}

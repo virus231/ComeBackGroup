@@ -1,0 +1,33 @@
+.section-features {
+  backdrop-filter: blur(26px);
+  padding: 55px 0;
+
+  .section-inner {
+    max-width:1280px !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+.features-wrapper  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+
+    & svg {
+      @include centered;
+    }
+  }
+}
