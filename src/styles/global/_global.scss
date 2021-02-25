@@ -45,15 +45,30 @@ ul {
 }
 
 // My styles
+.subtitle {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-bottom: 20px;
+}
+
 .section-inner {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 25px;
+
 }
 
 .btn {
   text-align: center;
   display: inline-block;
   padding: 8px 11px;
+  border: none;
+  cursor: pointer;
 
   &-primary {
     background: #FF9900;
@@ -82,6 +97,19 @@ ul {
       background: #FF9900;
       color: white;
     }
+  }
+
+  &-form {
+    background: white;
+    color: #FF9900;
+    transition: all .33s;
+    padding: 12px 25px;
+
+    &:hover {
+      background: #FFB800;
+      color: white;
+    }
+
   }
 }
 
@@ -119,3 +147,4 @@ ul {
     }
   }
 }
+

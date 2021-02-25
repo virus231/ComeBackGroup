@@ -1,12 +1,10 @@
 .section-stages {
   background-color: #000;
 
-  .section-inner {
-    padding: 65px 0 140px 0;
-  }
 }
 
-.stage-wrapper {
+.stages-wrapper {
+  padding: 65px 0 140px 0;
 
   &__subtitle {
     display: inline-block;
@@ -16,7 +14,7 @@
     letter-spacing: 9.7px;
     text-transform: uppercase;
     color: #FF9900;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   &__title {

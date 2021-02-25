@@ -1,6 +1,21 @@
 .section-present {
-  background: url("images/bg-present.png") no-repeat;
-  background-size: cover;
+  position: relative;
+  //background: url("images/bg-present.png") no-repeat;
+  padding: 0;
+
+  &::before {
+    background: url("images/bg-present.png") 0 / cover fixed ;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 
   .section-inner {
     max-width: 860px;
