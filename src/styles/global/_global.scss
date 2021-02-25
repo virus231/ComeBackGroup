@@ -84,3 +84,31 @@ ul {
     }
   }
 }
+
+.arrows {
+  display: flex;
+}
+
+.dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &__item {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: lighten(#fff, 45%);
+    transition: all .33s;
+
+    &--active {
+      width: 9px;
+      height: 9px;
+      background-color: #fff;
+    }
+
+    & + & {
+      margin-left: 7px;
+    }
+  }
+}

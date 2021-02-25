@@ -1,0 +1,31 @@
+.section-portfolio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .section-inner {
+    padding: 100px 0;
+  }
+}
+
+.portfolio-wrapper {
+  text-align: center;
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: flex-start;
+
+  div {
+    text-align: left;
+    max-width: 520px;
+  }
+}
+
+.nav-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFB800;
+  padding: 5px;
+}
