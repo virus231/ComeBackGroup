@@ -102,6 +102,14 @@
   }
 }
 
+
+.hamburger-menu {
+  display: none;
+  @include respond-to('tablet-md') {
+    display: block;
+  }
+}
+
 #menu__toggle {
   opacity: 0;
 
@@ -194,7 +202,6 @@
   display: block;
   padding: 12px 24px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
