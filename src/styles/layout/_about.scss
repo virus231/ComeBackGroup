@@ -1,7 +1,7 @@
 .section-about {
   display: flex;
   align-items: center;
-  background: url("images/bg-about-02.png") no-repeat right bottom;
+  background: url("./images/bg-about-02.png") no-repeat right bottom;
   padding: 0;
 
   @include respond-to('tablet-large') {

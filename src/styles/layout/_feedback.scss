@@ -1,5 +1,5 @@
 .section-feedback {
-  background: url("images/bg-feedback.png") no-repeat center center;
+  background: url("./images/bg-feedback.png") no-repeat center center;
   background-size: cover;
   .section-inner {
     max-width: 770px;
@@ -34,7 +34,7 @@
     position: relative;
 
     &::before {
-      content: url("images/quote.png");
+      content: url("./images/quote.png");
       position: absolute;
       right: -25px;
       top: -50px;
