@@ -21,6 +21,10 @@
       display: inline-block;
       margin-bottom: 20px;
     }
+
+    @include respond-to('tablet') {
+      margin-bottom: 30px;
+    }
   }
 
   &__nav {
@@ -47,6 +51,10 @@
         margin-bottom: 15px;
       }
     }
+  }
+
+  @include respond-to('tablet') {
+    flex-wrap: wrap;
   }
 }
 

@@ -68,6 +68,15 @@
         padding: 3px;
         color: #fff;
       }
+
+      @include respond-to('tablet') {
+          width: 100%;
+        }
+      }
+
+    @include respond-to('tablet') {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

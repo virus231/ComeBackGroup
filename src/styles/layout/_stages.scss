@@ -6,6 +6,10 @@
 .stages-wrapper {
   padding: 65px 0 140px 0;
 
+  @include respond-to('tablet-large') {
+    text-align: center;
+  }
+
   &__subtitle {
     display: inline-block;
     font-weight: normal;
@@ -41,7 +45,7 @@
       color: white;
       z-index: 1;
       text-align: center;
-      margin-right: 140px;
+      margin-right: 120px;
 
       &:first-child {
         text-align: left;
@@ -55,9 +59,9 @@
 
       p {
         display: inline-block;
-        padding: 5px 30px;
+        padding: 15px 44px 25px 39px;
         border: 1px solid white;
-        border-radius: 50%;
+        border-radius: 100%;
         background-color: #000;
         font-weight: normal;
         font-size: 40px;
@@ -65,12 +69,32 @@
         color: #FFFFFF;
         text-align: center;
         font-family: 'Playfair Display', serif;
+        position: relative;
+
+        //
+        //&::before {
+        //  content:"";
+        //  position: absolute;
+        //  top: 0;
+        //  left: 0;
+        //  border-radius: 100em;
+        //  width: 30px;
+        //  height: 30px;
+        //  z-index: 1;
+        //  border: 5px solid orange;
+        //  background: none;
+        //}
       }
+
 
       div {
         max-width: 160px;
       }
 
+
+      @include respond-to('desktop-13') {
+        display: none;
+      }
     }
 
 
@@ -83,7 +107,11 @@
       display: inline-block;
       background-color: white;
       color: white;
-      top: 40px;
+      top: 55px;
+
+      @include respond-to('desktop-13') {
+        display: none;
+      }
     }
 
   }
@@ -103,5 +131,52 @@
 
   div:last-child {
     text-align: center;
+  }
+
+  @include respond-to('desktop-13') {
+    display: none;
+  }
+}
+
+.stage-wrapper__tablet {
+  display: none;
+
+  ul {
+    display:flex;
+    justify-content: space-between;
+
+    li {
+      width: 200px;
+      margin-right: 20px;
+      text-align: center;
+      font-size: 22px;
+      color: whitesmoke;
+
+      @include respond-to('tablet') {
+        margin-bottom: 20px;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+
+
+      @include respond-to('tablet') {
+        margin-right: 20px;
+        justify-content: center;
+      }
+    }
+
+    @include respond-to('tablet-large') {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @include respond-to('tablet') {
+      justify-content: center;
+    }
+  }
+  @include respond-to('desktop-13') {
+    display:block;
   }
 }

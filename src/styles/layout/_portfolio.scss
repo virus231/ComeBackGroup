@@ -23,6 +23,10 @@
   @include respond-to('tablet-large') {
     padding: 30px 0;
   }
+
+  @include respond-to('desktop-13') {
+    padding: 10px 0;
+  }
 }
 .project-wrapper {
   text-align: left;
@@ -55,15 +59,23 @@
   align-items: center;
   justify-content: space-around;
   background-color: #FFB800;
-  padding: 5px;
+  padding: 15px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 92px;
+
+  @include respond-to('tablet') {
+    left: 0;
+  }
 }
 
 .slider-wrapper {
   margin-top: 40px;
+
+  .section-inner {
+    padding: 0;
+  }
 
   &__imgs {
     display: flex;
@@ -73,15 +85,24 @@
       margin-right: 5px;
       margin-bottom: 5px;
     }
+
+    @include respond-to('tablet') {
+      flex-direction: row !important;
+    }
   }
 
   div:first-child {
     display: flex;
     position: relative;
+
+    @include respond-to('tablet') {
+      flex-direction: column;
+    }
   }
 
   @include respond-to('tablet-large') {
     margin-top: 0;
+    padding: 0 20px;
   }
 }
 
@@ -90,7 +111,11 @@
   align-items: center;
   justify-content: space-between;
 
-  @include respond-to('tablet-large') {
+  .section-inner:first-child {
+    //padding: 0 20px;
+  }
+
+  @include respond-to('desktop-13') {
     flex-direction: column;
   }
 }

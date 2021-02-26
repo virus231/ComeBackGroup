@@ -31,6 +31,14 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+      content: url("images/quote.png");
+      position: absolute;
+      right: -25px;
+      top: -50px;
+    }
   }
 
   &__author {
@@ -62,5 +70,9 @@
         }
       }
     }
+  }
+
+  @include respond-to('tablet') {
+    padding: 40px 10px;
   }
 }

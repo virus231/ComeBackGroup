@@ -25,10 +25,27 @@
       font-size: 16px;
       color: white;
     }
+
+    &-hamburger {
+      display: flex !important;
+      flex-direction: column;
+
+      a:first-child {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   &__socials {
     margin-left: 100px !important;
+
+    &-hamburger {
+      margin-left: 0 !important;
+
+      a {
+        margin-right: 15px;
+      }
+    }
   }
 
   & * {
@@ -215,5 +232,11 @@
 .order-call {
   @include respond-to('tablet-md') {
     display: none;
+  }
+
+  &-hamburger {
+    @include respond-to('tablet-md') {
+      display: block;
+    }
   }
 }
